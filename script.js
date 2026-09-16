@@ -1,14 +1,7 @@
+document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-document.addEventListener("DOMContentLoaded", () => {
-    
+    alert("Thank you for your feedback!");
 
-    const myButton = document.getElementById("actionButton");
-    const myStatus = document.getElementById("statusText");
-
-    
-    myButton.addEventListener("click", () => {
-
-        myStatus.textContent = "🎉 The JavaScript is working perfectly!";
-        myStatus.style.color = "#2ecc71";
-    });
+    this.reset();
 });
