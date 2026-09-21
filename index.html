@@ -32,13 +32,13 @@
     <form id="feedbackForm">
 
         <label>Name</label>
-        <input type="text" id="type_name" placeholder="Enter your name" required>
+        <input type="text" placeholder="Enter your name" required>
 
         <label>Email</label>
-        <input type="email" id="type_email" placeholder="Enter your email" required>
+        <input type="email" placeholder="Enter your email" required>
 
         <label>Rating</label>
-        <select id="type_rating" required>
+        <select required>
             <option value="">Choose a rating</option>
             <option>5 - Excellent</option>
             <option>4 - Very Good</option>
@@ -48,24 +48,16 @@
         </select>
 
         <label>Subject</label>
-        <input type="text" id="type_sub" placeholder="Feedback subject" required>
+        <input type="text" placeholder="Feedback subject" required>
 
         <label>Message</label>
-        <textarea id="type_message" placeholder="Write your feedback" required></textarea>
+        <textarea placeholder="Write your feedback" required></textarea>
 
-        <button type="submit" id="submit_btn">Submit Feedback</button>
+        <button type="submit">Submit Feedback</button>
 
     </form>
 
 </div>
-<div id= "output_Cont" class = "hidden">
-        <h3>Submission Summary</h3>
-        <p><strong>Output 1 (Name):</strong><span id="out_name"></span></p>
-        <p><strong>Output 2 (Email):</strong><span id="out_email"></span></p>
-        <p><strong>Output 3 (Rating):</strong><span id="out_rating"></span></p>
-        <p><strong>Output 3 (Subject):</strong><span id="out_subject"></span></p>
-        <p><strong>Output 5 (Message):</strong><span id="out_message"></span></p>
-    </div>
 
 <script src="script.js"></script>
 
