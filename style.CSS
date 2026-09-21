@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     margin: 0;
     background-image: url("https://static01.nyt.com/images/2024/01/10/multimedia/ND-Takoyaki-wfhg/ND-Takoyaki-wfhg-superJumbo.jpg");
     background-size: cover;
@@ -91,4 +91,18 @@ button:hover {
         width: 85%;
         padding: 20px;
     }
+}
+
+.hidden {
+    width: 70%;
+    max-width: 750px;
+    margin: 40px auto;
+    background: #FCE5BB;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+h3 {
+    color: #8B9A6E;
+    text-align: center;
 }
