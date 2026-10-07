@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PogiYaki Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Welcome to PogiYaki</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.5Nn8OVMpUjK_sctVnHwl8AHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bigyaki">
+            <h3>Bigyaki</h3>
+            <p>Jumbo Takoyaki.</p>
+            <p>P99 - 199</p>
+        </div>
+
+        <div class="card">
+            <img src="https://thisis-japan.com/wp-content/uploads/2017/05/93c10518ad4ef76fdcd3428929517ae7.jpeg" alt="Smolyaki">
+            <h3>Smolyaki</h3>
+            <p>Bitesize Takoyaki.</p>
+            <p>P89 - 189</p>
+        </div>
+
+    </div>
+
+    <form id="feedbackForm">
+
+        <label>Name</label>
+        <input type="text" id="type_name" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" id="type_email" placeholder="Enter your email" required>
+
+        <label>Rating</label>
+        <select id="type_rating" required>
+            <option value="">Choose a rating</option>
+            <option>5 - Excellent</option>
+            <option>4 - Very Good</option>
+            <option>3 - Good</option>
+            <option>2 - Fair</option>
+            <option>1 - Poor</option>
+        </select>
+
+        <label>Subject</label>
+        <input type="text" id="type_sub" placeholder="Feedback subject" required>
+
+        <label>Message</label>
+        <textarea id="type_message" placeholder="Write your feedback" required></textarea>
+
+        <button type="submit" id="submit_btn">Submit Feedback</button>
+
+    </form>
+
+</div>
+<div id= "output_Cont" class = "hidden">
+        <h3>Submission Summary</h3>
+        <p><strong>Output 1 (Name):</strong><span id="out_name"></span></p>
+        <p><strong>Output 2 (Email):</strong><span id="out_email"></span></p>
+        <p><strong>Output 3 (Rating):</strong><span id="out_rating"></span></p>
+        <p><strong>Output 3 (Subject):</strong><span id="out_subject"></span></p>
+        <p><strong>Output 5 (Message):</strong><span id="out_message"></span></p>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
