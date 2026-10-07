@@ -1,7 +1,16 @@
-document.getElementById("feedbackForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+function showGreeting() {
 
-    alert("Thank you for your feedback!");
+    let name = document.getElementById("name").value;
+    let age = document.getElementById("age").value;
 
-    this.reset();
-});
+    let message = "";
+
+    if (age < 18) {
+        message = "You are a minor.";
+    } else {
+        message = "You are an adult.";
+    }
+
+    document.getElementById("result").innerHTML =
+        "Hello, " + name + "! " + message;
+}

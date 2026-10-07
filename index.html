@@ -1,65 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PogiYaki Feedback</title>
+    <title>JavaScript Activity</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <h1>Welcome to PogiYaki</h1>
+        <h2>Welcome!</h2>
 
-    <div class="cards">
+        <label>Enter your name:</label>
+        <br>
+        <input type="text" id="name">
 
-        <div class="card">
-            <img src="https://tse1.mm.bing.net/th/id/OIP.5Nn8OVMpUjK_sctVnHwl8AHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bigyaki">
-            <h3>Bigyaki</h3>
-            <p>Jumbo Takoyaki.</p>
-            <p>P99 - 199</p>
-        </div>
+        <br>
 
-        <div class="card">
-            <img src="https://thisis-japan.com/wp-content/uploads/2017/05/93c10518ad4ef76fdcd3428929517ae7.jpeg" alt="Smolyaki">
-            <h3>Smolyaki</h3>
-            <p>Bitesize Takoyaki.</p>
-            <p>P89 - 189</p>
-        </div>
+        <label>Enter your age:</label>
+        <br>
+        <input type="number" id="age">
+
+        <br><br>
+
+        <button onclick="showGreeting()">Submit</button>
+
+        <p id="result"></p>
 
     </div>
 
-    <form id="feedbackForm">
-
-        <label>Name</label>
-        <input type="text" placeholder="Enter your name" required>
-
-        <label>Email</label>
-        <input type="email" placeholder="Enter your email" required>
-
-        <label>Rating</label>
-        <select required>
-            <option value="">Choose a rating</option>
-            <option>5 - Excellent</option>
-            <option>4 - Very Good</option>
-            <option>3 - Good</option>
-            <option>2 - Fair</option>
-            <option>1 - Poor</option>
-        </select>
-
-        <label>Subject</label>
-        <input type="text" placeholder="Feedback subject" required>
-
-        <label>Message</label>
-        <textarea placeholder="Write your feedback" required></textarea>
-
-        <button type="submit">Submit Feedback</button>
-
-    </form>
-
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
